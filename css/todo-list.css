@@ -1,0 +1,84 @@
+body{
+  /* background-image: url("images/backgroud.jpg"); */
+  background-color: darkseagreen;
+  background-image: url(https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1282x1920/4919616befa22354dd290220a52060ea/photo-1590952912024-520842ff2bf8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.header{
+  width: auto;
+  height: auto;
+  background-color:dimgrey;  
+  
+}
+.headerLeft{
+  display: flex;
+}
+.divIcon{
+  border: 1px solid dimgrey;
+  margin-left: 15px;
+  color: aliceblue;
+  background-color: dimgrey;
+  width: auto;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divIcon:hover{
+  background-color:black ;
+}
+.divSearch{
+  width: 300px;
+  height: 30px;
+  display: flex;
+  padding-left: 20px;
+}
+.content{
+  display: flex;
+  margin-left: 20%;
+  padding-top: 10px;
+}
+.divToDo{
+  border: 1px solid white;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+}
+.task{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 199px;
+  height: 40px;
+}
+
+.addCart {
+  width: 200px;
+  height: 40px;
+  margin-top: 2px;}
+.addCart:hover{
+  background-color:darkgray;
+}
+
+.divDoing{
+  border: 1px solid white;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  margin-left: 18px;
+}
+.divVerify{
+  border: 1px solid white;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  margin-left: 18px;
+}
+.divDone{
+  border: 1px solid white;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  margin-left: 18px;
+}
