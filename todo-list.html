@@ -29,59 +29,91 @@
     </div>
   </header>
   <div class="content">
-    <div class="divToDo">
+    <div class="divList">
       <h2>Things to do</h2>
-      <div class="task">
-        <p>Task 1</p>
+      <div>
+        <ul id="myUL1" class="myUL">
+          <li onclick=" modalFunction(1,1)" id="myLI1">Task 1</li>
+        </ul>
+        <i class="fa fa-edit iconEdit" id="editIcon"></i>
       </div>
-      <div class="task">
-        <p>Task 2</p>
+      <div class="task" id="addTask1">
+        <input type="text" id="tsk1" name="">
+        <button id="btnAdd" onclick="addtask(1)">Add</button>
       </div>
-      <div class="addCart">
+      <div class="addCart" id="addCardId1">
         <span><i class="fa fa-plus"></i></span>
-        <span>Add orthers card</span>
+        <span onclick="inputs(1)">Add orthers card</span>
       </div>
     </div>
-    <div class="divDoing">
+    <div class="divList">
       <h2>Doing</h2>
-      <div class="addCart">
+      <div id="">
+        <ul id="myUL2" class="myUL">
+          <li onclick=" modalFunction(2,1)"  id="myLI2">Task 1</li>
+          <i class="fa fa-edit iconEdit" id="editIcon"></i>
+        </ul>
+      </div>
+      <div class="task" id="addTask2">
+        <input type="text" id="tsk2" name="">
+        <span id="btnAdd" onclick="addtask(2)">Add</span>
+        
+      </div>
+      <div class="addCart" id="addCardId2">
         <span><i class="fa fa-plus"></i></span>
-        <span>Add orthers card</span>
+        <span onclick="inputs(2)">Add orthers card</span>
       </div>
     </div>
-    <div class="divVerify">
+    <div class="divList">
       <h2>Verify</h2>
-      <div class="addCart">
+      <div id="">
+        <ul id="myUL3" class="myUL">
+          <li onclick=" modalFunction(3,1)" id="myLI3">Task 1</li>
+          <i class="fa fa-edit iconEdit" id="editIcon"></i>
+        </ul>
+      </div>
+      <div class="task" id="addTask3">
+        <input type="text" id="tsk3" name="">
+        <span id="btnAdd" onclick="addtask(3)">Add</span>
+      </div>
+      <div class="addCart" id="addCardId3">
         <span><i class="fa fa-plus"></i></span>
-        <span>Add orthers card</span>
+        <span onclick="inputs(3)">Add orthers card</span>
       </div>
     </div>
-    <div class="divDone">
+    <div class="divList">
       <h2>Done</h2>
-      <div class="addCart">
+      <div id="">
+        <ul id="myUL4" class="myUL">
+          <li onclick=" modalFunction(4,1)" id="myLI4">Task 1</li>
+          <i class="fa fa-edit iconEdit" id="editIcon"></i>
+        </ul>
+      </div>
+      <div class="task" id="addTask4">
+        <input type="text" id="tsk4" name="">
+        <span id="btnAdd" onclick="addtask(4)">Add</span>
+      </div>
+      <div class="addCart" id="addCardId4">
         <span><i class="fa fa-plus"></i></span>
-        <span>Add orthers card</span>
+        <span onclick="inputs(4)">Add orthers card</span>
       </div>
     </div>
   </div>
+
+  <div class="modal" id="myModal">
+    <div class="modal-content" id="modalID">
+      <h1 id="taskName"></h1>  
+      <div class="">
+        <h2>Description</h2>
+        <textarea type="text" placeholder="Add a more detailed description..." id="description"></textarea>
+        <h2>Activity</h2>
+        <input type="text" placeholder="Add a more detailed activity..." id="activity">
+        <button id="btCancle" onclick="btnCancle()">cancle</button> 
+      </div>
+    </div>
+  </div>
+  
 </body>
-<!-- <script>
-  inputs = () =>{
-    document.getElementById("task").style.display = "block";
-    document.getElementById("btnAdd").style.display = "block";
-
-    }
-  addtask = () =>{
-    var data = document.getElementById("task").value;
-    document.getElementById("showData").innerHTML = data;
-    // var array = []
-    // for( let i = 0; i <array.length; i++){
-    //    array.push[i];
-    // }
-    document.getElementById("task").style.display = "none";
-    document.getElementById("btnAdd").style.display = "none";
-  }
-
-</script> -->
+<script src="js/todo-list.js"></script>
 
 </html>
